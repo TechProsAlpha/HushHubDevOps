@@ -1,0 +1,20 @@
+#########################################
+# author: ashraf minhaj
+# email : ashraf_minhaj@yahoo.com
+# 
+# date: 07-12-23
+# HushHub Backend 
+#########################################
+
+version: '3.8'
+
+services:
+  backend:
+    # in future it will be the 'latest' for best practice
+    # instead of numeric version
+    image: ashraftheminhaj/hushhub-backend:1.0
+    container_name: backend
+    ports:
+      - "8080:8080"
+    env_file:
+      - ./.env
